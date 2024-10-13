@@ -43,5 +43,6 @@ struct LandmarkList: View {
 
 
 #Preview {
-    LandmarkDetail(landmark: ModelData().landmarks[0])
+    LandmarkList()
+        .environment(ModelData())
 }
