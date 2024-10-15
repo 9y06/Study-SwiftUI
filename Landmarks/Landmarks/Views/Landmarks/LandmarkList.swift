@@ -37,12 +37,13 @@ struct LandmarkList: View {
             .navigationTitle("Landmarks")
         } detail: {
             Text("Select a Landmark")
+            
+            
         }
     }
 }
 
 
 #Preview {
-    LandmarkList()
-        .environment(ModelData())
+    LandmarkDetail(landmark: ModelData().landmarks[0])
 }
